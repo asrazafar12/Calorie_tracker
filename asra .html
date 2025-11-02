@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #084298;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+
+    .skills table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 60%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .skills th, .skills td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .skills th {
+      background-color: #0d6efd;
+      color: white;
+    }
+
+    .skills tr:nth-child(even) {
+      background-color: #e9ecef;
+    }
+
+    .project {
+      margin: 20px 0;
+    }
+
+    .project img {
+      width: 60%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .project h3 {
+      margin-top: 10px;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    #topBtn:hover {
+      background-color: #084298;
+    }
+
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #0d6efd;
+      width: 60%;
+      margin: 30px auto;
+    }
+
+    /* --- Contact Table --- */
+    .contact-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: #0d6efd;
+      margin-bottom: 20px;
+    }
+
+    .contact-table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 60%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .contact-table td {
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-table input,
+    .contact-table textarea {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-table textarea {
+      resize: none;
+    }
+
+    .contact-btn {
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .contact-btn:hover {
+      background-color: #084298;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 768px) {
+      .skills table, .contact-table {
+        width: 90%;
+      }
+      .project img {
+        width: 90%;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="https://i.pinimg.com/736x/c1/e6/c3/c1e6c31b456eb668901fa69025d1522f.jpg" alt="Profile Picture">
+    <p>Hi! My name is <b>Asra Zafar</b>. I am learning Web Development, and this is my first portfolio project using HTML and CSS.</p>
+  </section>
+
+  <hr>
+
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Expert</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Learning</td>
+      </tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <img src="https://www.crio.do/blog/content/images/2022/02/HTML-Project---Online-Code-Editor--JQuery.png" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>A simple HTML and CSS project.</p>
+    </div>
+
+    <div class="project">
+      <img src="https://i.ytimg.com/vi/RroDdybvu5s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAJ9Z8bCU10U3JtCLkhXNErdirz6A" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>A simple portfolio project using HTML and CSS.</p>
+    </div>
+  </section>
+
+  <hr>
+
+
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <table class="contact-table">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" placeholder="Asra Zafar"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" placeholder="asrazafar12@gmail.com"></td>
+      </tr>
+      <tr>
+        <td><label for="message">Message:</label></td>
+        <td><textarea id="message" rows="4" placeholder="An apple a day keeps doctor away...💅🏻"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button class="contact-btn">Send Message</button>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <button id="topBtn">Back to Top</button>
+
+  <script>
+    // Back to top functionality
+    document.getElementById("topBtn").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
